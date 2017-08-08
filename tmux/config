@@ -1,0 +1,43 @@
+ServerAliveInterval 120
+
+## examples
+Host [servername]
+  User [username]
+  HostName [ipaddress]
+  IdentityFile [key pass]
+
+### springboard
+Host springboard
+  HostName 192.168.10.9
+  User [username]
+  Port 2222
+  Identityfile ~/.ssh/id_rsa
+
+### web servers
+Host web-server01
+  User webuser
+  HostName 192.168.10.10
+  ProxyCommand ssh springboard nc %h %p
+
+Host web-server02
+  User webuser
+  HostName 192.168.10.11
+  ProxyCommand ssh springboard nc %h %p
+
+Host web-server03
+  User webuser
+  HostName 192.168.10.12
+  ProxyCommand ssh springboard nc %h %p
+  
+Host web-server04
+  User webuser
+  HostName 192.168.10.13
+  ProxyCommand ssh springboard nc %h %p
+
+### db server
+Host db-server01
+  User dbuser
+  HostName 192.168.10.14
+  ProxyCommand ssh web-server01 nc %h %p
+  GatewayPorts yes
+  LocalForward 10000 localhost:3306
