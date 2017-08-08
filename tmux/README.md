@@ -1,18 +1,22 @@
 work_tools / tmux
 ====
 
-‚PƒRƒ}ƒ“ƒh‚Å•¡”‚ÌƒT[ƒo‚ÉÚ‘±‚µ‚Äì‹Æ‚âŠÄ‹‚ğ‚µ‚½‚¢‚Æ‚«‚Ég—p
+ï¼‘ã‚³ãƒãƒ³ãƒ‰ã§è¤‡æ•°ã®ã‚µãƒ¼ãƒã«æ¥ç¶šã—ã¦ä½œæ¥­ã‚„ç›£è¦–ã‚’ã—ãŸã„ã¨ãã«ä½¿ç”¨
 
 ## Usage
-### Šeƒpƒlƒ‹‚Å“¯Šú‚ğ‚Æ‚éê‡
+### å„ãƒ‘ãƒãƒ«ã§åŒæœŸã‚’ã¨ã‚‹å ´åˆ
 ```
 $ sh ~/tools/multi_session.sh -s web-server0{1..4}
 ```
 
-### Šeƒpƒlƒ‹‚Å“¯Šú‚ğ‚Æ‚ç‚È‚¢ê‡
+### å„ãƒ‘ãƒãƒ«ã§åŒæœŸã‚’ã¨ã‚‰ãªã„å ´åˆ
 ```
-$ sh ~/tools/multi_session.sh -s web-server0{1..4}
+$ sh ~/tools/multi_session.sh web-server0{1..4}
 ```
+
+## how use tmux
+* [tmuxã®ä½¿ã„æ–¹](http://qiita.com/vintersnow/items/be4b29652ff665c45198)
+* [tmuxã®åŸºæœ¬çš„ãªä½¿ã„æ–¹ã¨ã‚³ãƒãƒ³ãƒ‰ã®ã¾ã¨ã‚](http://www.task-notes.com/entry/20150711/1436583600)
 
 ## Requirement
 * openssh
